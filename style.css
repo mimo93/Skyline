@@ -124,17 +124,17 @@ src: https://bootsnipp.com/snippets/GaeQR
 
 */
 
-  .searchbar{
+.searchbar{
   margin-bottom: auto;
   margin-top: auto;
   height: 40px;
-  background-color: #0d4a56;
+  background-color: #259adf;
   border-radius: 30px;
   
-  }
+}
 
-  .search_input{
-  color: black;
+.search_input{
+  color: white;
   border: 0;
   outline: 0;
   background: none;
@@ -142,23 +142,27 @@ src: https://bootsnipp.com/snippets/GaeQR
   caret-color:transparent;
   line-height: 40px;
   transition: width 0.6s linear;
-  }
+}
 
-  .searchbar:hover > .search_input{
-  padding: 0 0px;
+.searchbar:hover > .search_input{
   width: 200px;
   caret-color:black;
-  transition: width 0.4s linear;
+  transition: width 0.5s linear;
   padding-left: 20px;
-  }
-
-  .searchbar:hover > .search_icon{
-  background-color: white;
+}
+.search_input:focus{
+  width: 200px;
+  caret-color:black;
+  transition: width 0.5s linear;
+  padding-left: 20px;
+} 
+.search_input:focus > .search_icon {
+  background-color: rgb(22, 98, 199);
   box-shadow: 0 18px 30px 0 rgba(0,0,0,0.2);
-  color: #39347e;
-  }
+  color: #5183c4;
+}
 
-  .search_icon{
+.search_icon{
   height: 40px;
   width: 40px;
   float: right;
@@ -166,8 +170,23 @@ src: https://bootsnipp.com/snippets/GaeQR
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: #5183c4
   
+}
+/*
+End of search bar
+*/
+
+/**
+Formatação condicionada ao tamanho da tela (para tamanho menor que 600px)
+*/
+@media (max-width: 600px){
+  .searchbar{
+    break-before: always;
+    align-self: center;
+    
   }
-  /*
-  End of search bar
-  */
+  #imagenLogo{
+    margin-right: 0;
+  }
+}
