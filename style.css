@@ -128,7 +128,7 @@ src: https://bootsnipp.com/snippets/GaeQR
   margin-bottom: auto;
   margin-top: auto;
   height: 40px;
-  background-color: #259adf;
+  background-color: #222561;
   border-radius: 30px;
   
 }
@@ -183,7 +183,7 @@ Formatação condicionada ao tamanho da tela (para tamanho menor que 600px)
 @media (max-width: 600px){
   .searchbar{
     break-before: always;
-    align-self: center;
+    margin-left: auto;
     
   }
   #imagenLogo{
