@@ -48,13 +48,30 @@
 .blackLinks{
   color: black;
 }
-
+/**
+*Titulo de todos os slides 
+**/
+#tituloCarroceis{
+  margin-left: 40%;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
 /*
 **1ª Pagina (Slide)
 */
 /*
 * Geremciamento de estilos do video
 */
+/*Imagens dos videos*/
+.imgModal{
+  position: relative;
+  top: -40px;
+  width: 90%;
+  margin-left: 5%;
+}
+/*cartões dos videos*/
+
 .cd-section iframe{
   margin: 0 auto;
   display: block;
@@ -70,22 +87,8 @@ header {
   overflow: hidden;
 }
 
-#header #video {/*comentadp com #*/
-  position: relative;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
 video{
-  position: absolute;
+  position: relative;
   z-index: 0;
 }
 
@@ -109,19 +112,19 @@ header .overlay {
 */
 #linkSaibaMais{
   position:absolute;
-  padding: 6px;
+  padding-top: 1%;
   display: block;
   text-align: center;
   overflow: hidden;
-  max-width: 300px;
-  max-height: 30px;
+  max-width: 250px;
+  max-height: 45.29px;
   border-width: 2px;
   outline: none;
   border-radius: 50px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
   background-color: #2729ae;
   transition: background-color .3s;
-  bottom: 80px;
+  bottom: 40%;
   margin-left: 38%;
   
 }
@@ -142,14 +145,13 @@ header .overlay {
 
 /* Organiza a lista de videos na pagina 2 */
 .videoList{
-  margin-top: 2.5%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-bottom: 5%;
-  
-  height: 165px;
-  width: 252px;
+  height: 236px;
+  width: 300px;
   float: left;
-  background-color: white;
+  background:linear-gradient(180deg, #2285FF -38.42%, #1A64BF 100%);;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
 }
 .quebraFloat{
