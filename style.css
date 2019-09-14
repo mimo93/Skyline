@@ -137,21 +137,28 @@ header .overlay {
 /*
 **2ª Pagina (Slide)
 */
-
 /*
-** Backdrop incorreto
+*Ajusta  o tamanho do carrocel
 */
+.carroselGeral{
+  width: 90%;
+  margin-left: 15%;
+}
+/***
+Ajusta os as setas do carroseu
+***/
+
 
 
 /* Organiza a lista de videos na pagina 2 */
 .videoList{
-  margin-top: 5%;
-  margin-left: 10%;
+  margin-top: 100px;
+  margin-left: 1%;
   margin-bottom: 5%;
   height: 236px;
   width: 300px;
   float: left;
-  background:linear-gradient(180deg, #2285FF -38.42%, #1A64BF 100%);;
+  background-color:white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
 }
 .quebraFloat{
