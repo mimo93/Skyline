@@ -9,6 +9,7 @@ var index = 2;
 index = SlideCreator(index,"div#firstCardSlide1","div#firstSlide");
 index = SlideCreator(index,"div#firstCardSlide2","div#secondSlide");
 index = SlideCreator(index,"div#firstCardSlide3","div#tirdSlide");
+index = SlideCreator(index-4,"div#firstCardSlide4","div#fourSlide");
 function SlideCreator (index, baseElement, appendElement) {
     var stop = index + 5;
     for(index ; index < stop; index++){
