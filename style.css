@@ -222,6 +222,7 @@ Correção BackDrop
 .modal-backdrop{
   z-index: -1;
 }
+/*
 Formatação condicionada ao tamanho da tela (para tamanho menor que 600px)
 */
 @media (max-width: 600px){
