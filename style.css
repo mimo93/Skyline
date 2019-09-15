@@ -27,7 +27,11 @@
 .subTopNavBar{
   z-index: 0;
 }
-
+#secondNav{
+  width: 100%;
+  height: 20%;  
+  background-color: #D1D1D9;
+}
 .topNav{
   background-color: white;
   color: black;
@@ -47,122 +51,6 @@
 }
 .blackLinks{
   color: black;
-}
-/**
-*Titulo de todos os slides 
-**/
-#tituloCarroceis{
-  margin-left: 40%;
-  font-size: 20px;
-  font-family: sans-serif;
-  margin-top: 30px;
-}
-/*
-**1ª Pagina (Slide)
-*/
-/*
-* Geremciamento de estilos do video
-*/
-/*Imagens dos videos*/
-.imgModal{
-  position: relative;
-  top: -40px;
-  width: 90%;
-  margin-left: 5%;
-}
-/*cartões dos videos*/
-
-.cd-section iframe{
-  margin: 0 auto;
-  display: block;
-
-}
-header {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 50rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-video{
-  position: relative;
-  z-index: 0;
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.3;
-  z-index: 1;
-}
-/* Ajuste do Link saiba mais 
-**
-*/
-#linkSaibaMais{
-  position:absolute;
-  padding-top: 1%;
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  max-width: 250px;
-  max-height: 45.29px;
-  border-width: 2px;
-  outline: none;
-  border-radius: 50px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  background-color: #2729ae;
-  transition: background-color .3s;
-  bottom: 40%;
-  margin-left: 38%;
-  
-}
-#linkSaibaMais:hover, #linkSaibaMais:focus {
-  background-color: #2729ae;
-}
-#textSaibaMaisLink{
-  color: white;
-}
-/*
-**2ª Pagina (Slide)
-*/
-/*
-*Ajusta  o tamanho do carrocel
-*/
-.carroselGeral{
-  width: 90%;
-  margin-left: 15%;
-}
-/***
-Ajusta os as setas do carroseu
-***/
-
-
-
-/* Organiza a lista de videos na pagina 2 */
-.videoList{
-  margin-top: 100px;
-  margin-left: 1%;
-  margin-bottom: 5%;
-  height: 236px;
-  width: 300px;
-  float: left;
-  background-color:white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
-}
-.quebraFloat{
-  clear: both;
 }
 /**
 
@@ -224,7 +112,183 @@ src: https://bootsnipp.com/snippets/GaeQR
 /*
 End of search bar
 */
+/*
+**1ª Pagina (Slide)
+*/
+/*
+* Geremciamento de estilos do video
+*/
+/*Imagens dos videos*/
+.imgModal{
+  position: relative;
+  top: -40px;
+  width: 90%;
+  margin-left: 5%;
+}
+/*cartões dos videos*/
+
+.cd-section iframe{
+  margin: 0 auto;
+  display: block;
+  
+  
+}
+.cd-section{
+  width: 80%;
+  align-items: center;
+}
+body{
+  background-color: #f1f1f1;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 50rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video{
+  position: relative;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+/* Ajuste do Link saiba mais 
+**
+*/
+#linkSaibaMais{
+  position:absolute;
+  padding-top: 1%;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  max-width: 250px;
+  max-height: 45.29px;
+  border-width: 2px;
+  outline: none;
+  border-radius: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #2729ae;
+  transition: background-color .3s;
+  bottom: 40%;
+  margin-left: 38%;
+  
+}
+#linkSaibaMais:hover, #linkSaibaMais:focus {
+  background-color: #2729ae;
+}
+#textSaibaMaisLink{
+  color: white;
+}
+/*
+**2ª Pagina (Slide)
+*/
 /**
+*Titulo de todos os slides 
+**/
+#tituloCarroceis{
+  margin-left: 31%;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 7%;
+  color: black;
+}
+/*
+*Ajusta  o tamanho do carrocel
+*/
+.carroselGeral{
+  width: 90%;
+  margin-right: 10%;
+  margin-left: 14%;
+}
+/***
+Ajusta os as setas do carroseu
+***/
+.carousel-control-prev , .carousel-control-next{
+  display: inline;
+  position: relative;
+  bottom: 0;
+}
+
+.carousel-control-next{
+  position: relative;
+  float: right;
+  right: 15%;
+}
+.carousel-control-prev {
+  left: 20%;
+}
+.carousel-control-prev-icon{
+  background-image: url("./resources/imagens/prevIcon.svg");
+}
+.carousel-control-next-icon{
+  background-image: url("./resources/imagens/nextIcon.svg");
+}
+.carousel-indicators li{
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+/*
+indicadores de slide 
+
+*/
+.carousel-indicators{
+  width: 30%;
+  margin-left: 33%;
+}
+/* Organiza a lista de videos na pagina 2 */
+.videoList{
+  margin-top: 100px;
+  margin-left: 1%;
+  margin-bottom: 5%;
+  height: 236px;
+  width: 300px;
+  float: left;
+  background-color:white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+}
+.quebraFloat{
+  clear: both;
+}
+/*
+Parte 3 site 
+*/
+#textTirdPart{
+  color: black;
+  float: left;
+  margin-left: 5%;
+}
+#titleTextTirdPart{
+  width: 297px;
+}
+.cardTirdPart{
+  width: 365px;
+  height: 236px;
+  margin: 10px;
+  /*left: calc(50% - 365px/2 + 362.5px);*/
+  background: linear-gradient(139.09deg, #FF58E5 9.81%, #E14ECA 46.05%, #C745B3 84.62%);
+  border-radius: 4px;
+  float: right;
+}
 /**
 Correção BackDrop
 */
@@ -242,5 +306,5 @@ Formatação condicionada ao tamanho da tela (para tamanho menor que 600px)
   }
   #imagenLogo{
     margin-right: 0;
-  }
+  } 
 }
