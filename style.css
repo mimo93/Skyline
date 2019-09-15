@@ -11,7 +11,7 @@
   outline: none;
   border-radius: 50px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  background-color: #502ecc;
+  background-color: #2181f7;
   color: #ecf0f1;
   transition: background-color .3s;
 }
@@ -112,13 +112,23 @@ src: https://bootsnipp.com/snippets/GaeQR
 /*
 End of search bar
 */
+/**
+estilo geral dos titulos
+*/
+#cardTilteFPart{
+  position: absolute;
+  bottom: 80px;
+  left: 15px;
+}
 /*
 **1ª Pagina (Slide)
 */
 /*
 * Geremciamento de estilos do video
 */
-
+#cardTilteFPart{
+  color: black;
+}
 /*
 Ajustes do titulo do primeiro slide da primeira parte 
 */
