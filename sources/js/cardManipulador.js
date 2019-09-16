@@ -37,7 +37,10 @@ index = SlideCreator(index,"div#firstCardSlide1","div#firstSlide");
 index = SlideCreator(index,"div#firstCardSlide2","div#secondSlide");
 index = SlideCreator(index,"div#firstCardSlide3","div#tirdSlide");
 index = SlideCreator(index-4,"div#firstCardSlide4","div#fourSlide");
-
+var index2 = 2;
+index2 = SlideCreator2(index2,"div#cardFourPart1","div#firstSlideFourPart");
+index2 = SlideCreator2(index2,"div#cardFourPart2","div#secondSlideFourPart");
+index2 = SlideCreator2(index2,"div#cardFourPart3","div#thirdSlideFourPart");
 
 function SlideCreator (index, baseElement, appendElement) {
     var stop = index + 5;
@@ -47,7 +50,18 @@ function SlideCreator (index, baseElement, appendElement) {
         imagen = $(elementoClonado)[0].getElementsByTagName("img");
         textoTitulo = $(elementoClonado)[0].getElementsByTagName("h5");
         imagen[0].setAttribute("src","./resources/imagens/cartoes/"+index+".png");
-        textoTitulo[0].append(cardText[index]);
+        $(textoTitulo).text(cardText[index-1]);
+        $(elementoClonado).appendTo(appendElement);
+    }
+    return stop+1;
+}
+function SlideCreator2 (index, baseElement, appendElement) {
+    var stop = index + 9;
+    for(index ; index < stop; index++){
+        elementoClonado = $(baseElement).clone();
+        $(elementoClonado)[0].setAttribute("id",index);
+        imagen = $(elementoClonado)[0].getElementsByTagName("img");
+        imagen[0].setAttribute("src","./resources/imagens/cartoes2/"+index+".png");
         $(elementoClonado).appendTo(appendElement);
     }
     return stop+1;

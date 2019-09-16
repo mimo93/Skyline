@@ -120,14 +120,16 @@ estilo geral dos titulos
   bottom: 80px;
   left: 15px;
 }
+
 /*
 **1ª Pagina (Slide)
 */
 /*
-* Geremciamento de estilos do video
+* Geremciamento de estilos do cartão do video
 */
 #cardTilteFPart{
   color: black;
+  font-size: 16px;
 }
 /*
 Ajustes do titulo do primeiro slide da primeira parte 
@@ -340,6 +342,48 @@ Parte 3 site
 .card-tilteTirdPart{
   font-size: 20px;
 }
+/***
+quarta parte 
+**/
+#fourPart{
+  padding: 30px;
+  background-color: #f1f1f1;
+  border: 0;
+  width: 85%;
+  left: 10%;
+}
+#titleTextForurPart{
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+#textForurPart{
+  color: #595959;
+  text-align: center;
+}
+.cardFourPart{
+  position: relative;
+  width: 153px;
+  height: 105px;
+  float: left;
+  margin: 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  float: left;
+  align-items:center;
+  padding-top: 7px; 
+}
+.imageCardsFourPart{
+  position: relative;
+  float: left;
+  width:  123px;
+  height: 85px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
 /*
 Link sobre a empresa
 */
